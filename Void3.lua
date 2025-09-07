@@ -309,7 +309,11 @@ function VoidUI:SelectTab(name)
         end
     end
 end
-
+--Add Textbox to literally fucking anything i hate coding thsis bro
+window:AddTextBox(tab, "Placeholder text...", function(text, enterPressed)
+    -- text: current text in the box
+    -- enterPressed: true if user pressed Enter, false for real-time changes
+end)
 -- Add Button to Tab
 function VoidUI:AddButton(tab, text, callback)
     local button = Instance.new("TextButton")
